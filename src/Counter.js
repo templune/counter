@@ -1,6 +1,5 @@
 import React from 'react';
-import { FormGroup, Label, Input } from 'reactstrap';
-
+import {ShowMesagge} from './ShowMessage'
 class Clock extends React.Component {
     constructor(props) {
       super(props);
@@ -30,17 +29,14 @@ class Clock extends React.Component {
   
     render() {
         const counter = this.state.date.toLocaleTimeString();
-        if(counter === '20:23:00'){
+        if(counter === '20:49:50'){
             this.stopInterval();
         }
       return (
         <>
-            <FormGroup>
-        <Label for="exampleText">Escribe un mensaje bonito que quieras mostrar</Label>
-        <Input type="textarea" name="text" id="exampleText" />
-      </FormGroup>
+          <ShowMesagge showMessage={counter === '20:49:50'}></ShowMesagge>
           {counter}
-          {counter === '20:23:00' && 'Diego me la mama'}
+         
         </>
       );
     }
