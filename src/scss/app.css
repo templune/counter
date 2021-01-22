@@ -1,4 +1,13 @@
 
-body {
-    background-color: #000;
+.App {
+    background-image: url('../img/bg-counter.jpg');
+    background-size: cover;
+}
+
+.App-header {
+    background-color: unset;
+}
+
+.counter {
+    font-size: 4rem;
 }
