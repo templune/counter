@@ -9,5 +9,23 @@
 }
 
 .counter {
-    font-size: 4rem;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.list-inline {
+    display: flex;
+}
+
+.list-inline-item {
+    text-align: center;
+    margin-right: 10px;
+}
+
+.list-inline-item span {
+    margin: 0 2rem;
+}
+
+label {
+    font-size: 20px;
 }
