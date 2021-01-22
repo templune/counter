@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import { FormGroup, Label, Input } from 'reactstrap';
+
 class Clock extends React.Component {
     constructor(props) {
       super(props);
@@ -33,6 +35,10 @@ class Clock extends React.Component {
         }
       return (
         <>
+            <FormGroup>
+        <Label for="exampleText">Escribe un mensaje bonito que quieras mostrar</Label>
+        <Input type="textarea" name="text" id="exampleText" />
+      </FormGroup>
           {counter}
           {counter === '20:23:00' && 'Diego me la mama'}
         </>
