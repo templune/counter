@@ -35,12 +35,13 @@ class Clock extends React.Component {
         }
       return (
         <>
-            <FormGroup>
+           
+          {counter}
+          {counter === '20:23:00' && 'Diego me la mama'}
+          <FormGroup>
         <Label for="exampleText">Escribe un mensaje bonito que quieras mostrar</Label>
         <Input type="textarea" name="text" id="exampleText" />
       </FormGroup>
-          {counter}
-          {counter === '20:23:00' && 'Diego me la mama'}
         </>
       );
     }
