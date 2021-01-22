@@ -29,13 +29,32 @@ class Clock extends React.Component {
   
     render() {
         const counter = this.state.date.toLocaleTimeString();
-        if(counter === '20:49:50'){
+        if(counter === '20:59:40'){
             this.stopInterval();
         }
       return (
         <>
-          <ShowMesagge showMessage={counter === '20:49:50'}></ShowMesagge>
-          {counter}
+        <ul className="list-unstlyed list-inline">
+          <li className="list-inline-item">
+            <div>Siglo</div>
+            <p className="counter">21:</p>
+          </li>
+          <li className="list-inline-item">
+            <div>Año</div>
+            <p className="counter">21:</p>
+          </li>
+          <li className="list-inline-item">
+            <div>Día</div>
+            <p className="counter">21:</p>
+          </li>
+          <li className="list-inline-item">
+            <span>Hora</span> <span>Minutos</span> <span>Segundos</span>
+            <p className="counter">{counter}</p>
+          </li>
+        </ul>
+              
+          <ShowMesagge showMessage={counter === '20:59:40'}></ShowMesagge>
+         
          
         </>
       );
